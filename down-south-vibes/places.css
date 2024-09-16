@@ -1,0 +1,52 @@
+/* Main nav bar container */
+.navBarMain {
+    border-radius: 0 0 0px 0px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    
+}
+
+.logo img {
+    width: 150px;
+    padding-left: 60px;
+}
+
+/* Navigation links */
+.navBar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-right: 70px;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.navBar a:hover {
+    color: darkorange;
+}
+
+
+.homeimg {
+    position: relative;
+    width: 100%;
+}
+
+.homeimg img {
+    width: 100%;
+    display: block;
+}

@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Main nav bar container */
+.navBarMain {
+    border-radius: 0 0 0px 0px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    
+}
+
+.logo img {
+    width: 150px;
+    padding-left: 60px;
+}
+
+/* Navigation links */
+.navBar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-right: 70px;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.navBar a:hover {
+    color: darkorange;
+}
+
+
+
+/* Home image section */
+.homeimg {
+    position: relative;
+    width: 100%;
+}
+
+.homeimg img {
+    width: 100%;
+    display: block;
+}
+
+.cta-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 217px;
+    height: 62px;
+    border-radius: 19px;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0.37);
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Tags Section */
+.tags {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 8px;
+}
+
+.tags-button {
+    display: inline-block;
+    width: 200px;
+    height: 65px;
+    padding: 10px 12px;
+    border-radius: 19px;
+    background: #DBD9D9;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+}
+.home-body-text {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Card styling */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    gap: 40px;
+    padding: 20px;
+    
+}
+
+.card {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer Main Container */
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #f2f2f2;
+    border-top: 2px solid #ccc;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Left side with two columns of links */
+.footer-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+    gap: 20px; /* Adds space between columns */
+}
+.footer-left h3 {
+    grid-column: span 2; /* Makes the h3 span across both columns */
+    margin-bottom: 15px; /* Adds some space between the title and the list */
+    font-size: 18px; /* Adjust font size for better appearance */
+    text-align: left; /* Ensure the heading is aligned with the content */
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-left ul li {
+    margin-bottom: 10px;
+}
+
+.footer-left ul li a {
+    text-decoration: none;
+    color: #333;
+    line-height: 2;
+    transition: color 0.3s ease;
+}
+
+.footer-left ul li a:hover {
+    color: darkorange;
+}
+
+/* Logo in the center */
+.footer-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0; /* Adds spacing around the logo */
+}
+
+footer img {
+    max-width: 150px; /* Adjust the size of the logo */
+}
+
+/* Right side (newsletter subscription) */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-right h3 {
+    margin-bottom: 10px;
+}
+
+.footer-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.footer-right button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-right button:hover {
+    background-color: darkorange;
+}
+
+.footer-right p {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Footer Bottom Text */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Design */
+/* Responsive Design */
+
+/* For devices with max width of 1200px (larger tablets, smaller laptops) */
+@media (max-width: 1200px) {
+    .navBar ul {
+        gap: 10px;
+        padding-right: 30px;
+    }
+
+    .cta-button {
+        width: 180px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .tags-button {
+        width: 180px;
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .card {
+        width: 130px;
+        height: 180px;
+    }
+
+    .footer-left, .footer-right {
+        padding-left: 20px;
+    }
+
+    footer img {
+        max-width: 80px;
+    }
+}
+
+/* For devices with max width of 992px (tablets, smaller screens) */
+@media (max-width: 992px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .logo img {
+        padding-left: 0;
+    }
+
+    .navBar ul {
+        flex-direction: column;
+        padding-right: 0;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .cta-button {
+        width: 150px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .tags-button {
+        width: 160px;
+        height: 55px;
+        font-size: 14px;
+    }
+
+    .cards-container {
+        gap: 20px;
+    }
+
+    .footer-left, .footer-right {
+        padding-left: 0;
+        align-items: center;
+    }
+    
+    footer img {
+        max-width: 70px;
+    }
+}
+
+/* For devices with max width of 768px (tablets) */
+@media (max-width: 768px) {
+    .navBar ul {
+        padding-right: 0;
+        gap: 10px;
+    }
+
+    .cta-button {
+        width: 140px;
+        height: 45px;
+    }
+
+    .tags-button {
+        width: 140px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-right, .footer-center {
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    footer img {
+        max-width: 60px;
+    }
+}
+
+/* For devices with max width of 480px (mobile phones) */
+@media (max-width: 480px) {
+    .logo img {
+        width: 100px;
+    }
+
+    .navBar ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-right: 0;
+        align-items: center;
+    }
+
+    .cta-button {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .tags-button {
+        width: 120px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .cards-container {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .footer-left, .footer-right, .footer-center {
+        text-align: center;
+    }
+
+    footer img {
+        max-width: 50px;
+    }
+}
